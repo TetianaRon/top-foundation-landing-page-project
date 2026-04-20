@@ -5,9 +5,15 @@
     box-sizing: border-box;
     margin: 0;
 }
+
+/*==========================
+Navigation
+===========================*/
 nav{
     background-color: black;
     color: white;
+    position: fixed;
+    width: 100%;
 }
 .nav-container{
     display: flex;
@@ -30,4 +36,11 @@ nav{
 .nav-container ul a{
     color: white;
     text-decoration: none;
+}
+
+/*===========================
+Shared Styles
+=============================*/
+section{
+    padding: 60px 0;
 }
