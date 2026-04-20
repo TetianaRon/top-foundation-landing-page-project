@@ -1,0 +1,33 @@
+:root{
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    padding: 10px;
+    font-size: 1.4em;
+}
+.nav-container ul{
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+.nav-container ul li{
+    padding: 10px;
+    
+}
+.nav-container ul a{
+    color: white;
+    text-decoration: none;
+}
