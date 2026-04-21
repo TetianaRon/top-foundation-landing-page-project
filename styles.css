@@ -4,7 +4,8 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    line-height: 1.6;;
+    line-height: 1.2;
+    font-family: "Gelasio", serif;
 }
 
 /*==========================
@@ -20,7 +21,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 920px;
     margin: auto;
 
 }
@@ -49,11 +50,21 @@ Shared Styles
 
 h1{
     font-size: 42px;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+    line-height: 1.1;
 }
 h2{
     font-size: 36px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+p{
+    margin-bottom: 8px;
+    line-height: 1.6;
 }
 
 /* Sections and Containers - main layout sctucture*/
@@ -62,7 +73,7 @@ section{
     padding: 60px 0;
 }
 .container{
-    width: 80%;
+    width: 920px;
     margin: auto;
 }
 .two-column{
@@ -76,17 +87,54 @@ section{
 }
 .two-column .column-auto{
     flex: 0 1 auto;
+    flex-wrap: nowrap;
 }
 
 
-/* Content Blocks - basic elements layout */
+/* Content Blocks - basic content layout */
 
 .cont-header{
-    padding-bottom: 60px;
+    margin-bottom: 20px;
     width: 100%;
 }
 .cont-header-centered{
     text-align: center;
+}
+
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    padding: 10px;
+}
+.card img{
+    aspect-ratio: 1/1;
+    border: 1px solid grey;
+    border-radius: 16px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+    margin: 10px 0;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: rgb(146, 27, 87);
+    color: white;
+}
+.first-btn{
+    margin-right: 6px;
+}
+.btn-outlined{
+    background-color: transparent;
+    border: 2px solid rgb(146, 27, 87);
+}
+.btn-outlined.btn-light{
+    border: 2px solid rgb(255, 255, 255);
+
 }
 
 /*===========================
