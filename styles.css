@@ -4,6 +4,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    line-height: 1.6;;
 }
 
 /*==========================
@@ -19,9 +20,12 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
+    margin: auto;
+
 }
 .logo{
-    padding: 10px;
+    padding: 10px 0;
     font-size: 1.4em;
 }
 .nav-container ul{
@@ -41,6 +45,108 @@ nav{
 /*===========================
 Shared Styles
 =============================*/
+/* Typography */
+
+h1{
+    font-size: 42px;
+    margin-bottom: 32px;
+}
+h2{
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+/* Sections and Containers - main layout sctucture*/
+
 section{
     padding: 60px 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.two-column{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 80px;
+}
+.two-column > div{
+    flex: 1 1 50%;
+}
+.two-column .column-auto{
+    flex: 0 1 auto;
+}
+
+
+/* Content Blocks - basic elements layout */
+
+.cont-header{
+    padding-bottom: 60px;
+    width: 100%;
+}
+.cont-header-centered{
+    text-align: center;
+}
+
+/*===========================
+Hero Section
+=============================*/
+.hero-section{
+    padding-top: 100px; 
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+/*===========================
+Featured Section
+=============================*/
+
+.featured-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.featured-items.four-items .featured-item{
+    flex: 1 1 calc(25% - 20px);
+}
+
+/*===========================
+Quote Section
+=============================*/
+.quote-section{
+    background-color: rgb(230, 230, 230);
+    padding: 120px 0;
+}
+.quote-content{
+    width: 620px;
+    margin: auto;
+    text-align: right;
+}
+.quote-copy{
+    display: block;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/*===========================
+CTA Card
+=============================*/
+
+.cta-card{
+    background-color: blue;
+    color: white;
+    padding: 40px 100px;
+}
+
+/*===========================
+Footer
+=============================*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    padding: 20px;
 }
