@@ -5,14 +5,14 @@
     box-sizing: border-box;
     margin: 0;
     line-height: 1.2;
-    font-family: "Gelasio", serif;
+    font-family: "Roboto", sans-serif;
 }
 
 /*==========================
 Navigation
 ===========================*/
 nav{
-    background-color: black;
+    background-color: #1f2937;
     color: white;
     position: fixed;
     width: 100%;
@@ -21,7 +21,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 920px;
+    width: 1080px;
     margin: auto;
 
 }
@@ -49,12 +49,16 @@ Shared Styles
 /* Typography */
 
 h1{
-    font-size: 42px;
-    margin-bottom: 28px;
+    font-size: 48px;
+    font-weight: 900;
     line-height: 1.1;
+    color: #f9faf8;
+    margin-bottom: 28px;
 }
 h2{
     font-size: 36px;
+    color: #1f2937;
+    font-weight: 900;
     margin-bottom: 20px;
     line-height: 1.2;
 }
@@ -72,8 +76,11 @@ p{
 section{
     padding: 60px 0;
 }
+.dark-background{
+    background-color: #1f2937;
+}
 .container{
-    width: 920px;
+    width: 1080px;
     margin: auto;
 }
 .two-column{
@@ -101,6 +108,34 @@ section{
     text-align: center;
 }
 
+/* Buttons */
+
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    flex: 0 0 auto;
+    margin: 10px 0;
+    padding: 0.5em 1em;
+    background-color: #3882f6;
+    border-radius: 8px;
+}
+.btn-outlined{
+    background-color: transparent;
+    border: 2px solid rgb(146, 27, 87);
+}
+.btn-outlined.btn-light{
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+
 /* Cards */
 .card {
     display: flex;
@@ -114,36 +149,24 @@ section{
     border: 1px solid grey;
     border-radius: 16px;
     margin-bottom: 15px;
+    border: 3px solid #3882f6;
+    border-radius: 12px;
 }
 
-/* Buttons */
-.btn {
-    margin: 10px 0;
-    padding: 0.5em 1em;
-    text-decoration: none;
-    border-radius: 8px;
-    background-color: rgb(146, 27, 87);
-    color: white;
-}
-.first-btn{
-    margin-right: 6px;
-}
-.btn-outlined{
-    background-color: transparent;
-    border: 2px solid rgb(146, 27, 87);
-}
-.btn-outlined.btn-light{
-    border: 2px solid rgb(255, 255, 255);
-
-}
 
 /*===========================
 Hero Section
 =============================*/
 .hero-section{
     padding-top: 100px; 
-    background-color: rgb(46, 46, 46);
     color: white;
+}
+.hero-section p{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+.hero-section img{
+    border-radius: 12px;
 }
 
 /*===========================
@@ -163,7 +186,7 @@ Featured Section
 Quote Section
 =============================*/
 .quote-section{
-    background-color: rgb(230, 230, 230);
+    background-color: #e5e7eb;
     padding: 120px 0;
 }
 .quote-content{
@@ -173,7 +196,9 @@ Quote Section
 }
 .quote-copy{
     display: block;
-    font-size: 1.4em;
+    font-size: 36px;
+    color: #1f2937;
+    font-weight: 300;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -183,15 +208,20 @@ CTA Card
 =============================*/
 
 .cta-card{
-    background-color: blue;
+    background-color: #3882f6;
     color: white;
-    padding: 40px 100px;
+    padding: 40px 60px;
+    border-radius: 12px;
+}
+.cta-card h2{
+    color: white;
 }
 
 /*===========================
 Footer
 =============================*/
 footer{
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
