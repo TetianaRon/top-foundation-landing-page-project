@@ -107,6 +107,11 @@ section{
 .cont-header-centered{
     text-align: center;
 }
+.cont-header-centered p{
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Buttons */
 
@@ -143,6 +148,9 @@ section{
     align-items: stretch;
     text-align: center;
     padding: 10px;
+}
+.card__svg{
+    padding: 0 60px 20px;
 }
 .card img{
     aspect-ratio: 1/1;
